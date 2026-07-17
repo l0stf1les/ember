@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>the base html code</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Home</h1>  
-    </main>
-    <script src="index.js"></script>
-  </body>
+    <title>Ember</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="blur blur1"></div>
+<div class="blur blur2"></div>
+
+<div class="container">
+
+    <img src="logo.png" class="logo">
+
+    <h1>ember</h1>
+
+    <p>Roblox Internal & External</p>
+
+    <div class="tabs">
+
+        <button class="tab active" data-page="home">
+            Home
+        </button>
+
+        <button class="tab" data-page="docs">
+            Documentation
+        </button>
+
+        <button class="tab" data-page="discord">
+            Discord
+        </button>
+
+        <div class="slider"></div>
+
+    </div>
+
+    <div class="content">
+
+        <div class="page active" id="home">
+            <h2>Welcome</h2>
+            <p>
+                welcome to the next most powerful roblox internal & external.
+            </p>
+        </div>
+
+        <div class="page" id="docs">
+            <h2>Documentation</h2>
+            <p>
+                Lazy documentation
+            </p>
+        </div>
+
+        <div class="page" id="discord">
+            <h2>Discord</h2>
+            <p>
+                 Join Ember discord servre.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
 </html>
