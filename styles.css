@@ -89,11 +89,41 @@ body{
 .grid{
     position:absolute;
     inset:0;
+
     background:
-    linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+    linear-gradient(
+        rgba(255,140,60,.08) 1px,
+        transparent 1px
+    ),
+    linear-gradient(
+        90deg,
+        rgba(255,140,60,.08) 1px,
+        transparent 1px
+    );
+
     background-size:70px 70px;
-    mask-image:radial-gradient(circle at center,black 35%,transparent 100%);
+
+    mask-image:
+    radial-gradient(
+        circle at center,
+        black 25%,
+        transparent 80%
+    );
+
+    animation:gridMove 25s linear infinite;
+}
+
+
+@keyframes gridMove{
+
+    from{
+        background-position:0 0;
+    }
+
+    to{
+        background-position:70px 70px;
+    }
+
 }
 
 .noise{
