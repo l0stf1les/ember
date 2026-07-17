@@ -1,77 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ember</title>
 
     <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<div class="background"></div>
+    <!-- Animated Background -->
 
-<div class="blur blur1"></div>
-<div class="blur blur2"></div>
+    <div class="background">
 
-<div class="container">
+        <div class="gradient gradient-one"></div>
+        <div class="gradient gradient-two"></div>
+        <div class="gradient gradient-three"></div>
 
-    <img src="logo.png" class="logo">
-
-    <h1>ember</h1>
-
-    <p>Roblox Internal & External</p>
-
-    <div class="tabs">
-
-        <button class="tab active" data-page="home">
-            Home
-        </button>
-
-        <button class="tab" data-page="docs">
-            Documentation
-        </button>
-
-        <button class="tab" data-page="discord">
-            Discord
-        </button>
-
-        <div class="slider"></div>
+        <div class="noise"></div>
+        <div class="grid"></div>
+        <div class="particles"></div>
 
     </div>
 
-    <div class="content">
+    <!-- Navigation -->
 
-        <div class="page active" id="home">
-            <h2>Welcome</h2>
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <img src="logo.png" alt="Ember Logo">
+
+                <span>ember</span>
+
+            </div>
+
+            <div class="nav-links">
+
+                <button class="nav-item active">
+                    Home
+                </button>
+
+                <button class="nav-item">
+                    Documentation
+                </button>
+
+                <button class="nav-item">
+                    Discord
+                </button>
+
+                <div class="nav-slider"></div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-logo">
+
+                <img src="logo.png" alt="Ember">
+
+            </div>
+
+            <span class="badge">
+
+                ember
+
+            </span>
+
+            <h1>
+
+                ember internal<br>
+
+                <span>that ignite cheaters nd 99% sunc and 67% unc.</span>
+
+            </h1>
+
             <p>
-                welcome to the next most powerful roblox internal & external.
+
+                Powerful APIs, clean architecture, and a developer
+                experience designed to feel effortless.
+
             </p>
-        </div>
 
-        <div class="page" id="docs">
-            <h2>Documentation</h2>
-            <p>
-                Lazy documentation
-            </p>
-        </div>
+            <div class="hero-buttons">
 
-        <div class="page" id="discord">
-            <h2>Discord</h2>
-            <p>
-                 Join Ember discord servre.
-            </p>
-        </div>
+                <button class="primary-button">
 
-    </div>
+                    Launch Ember
 
-</div>
+                </button>
 
-<script src="index.js"></script>
+                <button class="secondary-button">
+
+                    Documentation
+
+                </button>
+
+            </div>
+
+        </section>
+
+        
+
+        <section class="features">
+
+            <div class="feature-card">
+
+                <div class="feature-icon"></div>
+
+                <h3>Blazing Fast</h3>
+
+                <p>
+                    Lightweight architecture with modern performance.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon"></div>
+
+                <h3>Developer First</h3>
+
+                <p>
+                    Beautiful APIs that make scripting enjoyable.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon"></div>
+
+                <h3>Community</h3>
+
+                <p>
+                    Join thousands of developers building together.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="index.js"></script>
 
 </body>
+
 </html>
