@@ -573,9 +573,8 @@ background-size:300%;
 animation:rainbow 8s linear infinite;
 }
 
-@keyframes rainbow{
-to{background-position:300%;}
-}
+
+
 
 @media (max-width:900px){
 header{padding:18px;}
