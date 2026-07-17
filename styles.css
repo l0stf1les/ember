@@ -420,4 +420,98 @@ main{
         width:100%;
     }
 
+    
+
+}
+
+.ember{
+    position:absolute;
+    width:4px;
+    height:4px;
+    background:#ff9b4d;
+    border-radius:50%;
+    box-shadow:
+    0 0 15px #ff9b4d,
+    0 0 30px #ff6b2d;
+    animation:emberFloat linear infinite;
+}
+
+@keyframes emberFloat{
+    0%{
+        transform:translateY(0) scale(1);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:
+        translateY(-600px)
+        translateX(80px)
+        scale(.3);
+        opacity:0;
+    }
+}
+
+.hidden{
+    opacity:0;
+    transform:translateY(40px);
+    filter:blur(10px);
+    transition:
+    1s cubic-bezier(.22,1,.36,1);
+}
+
+.show{
+    opacity:1;
+    transform:none;
+    filter:none;
+}
+
+.cursor-glow{
+    position:fixed;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    pointer-events:none;
+    background:
+    radial-gradient(
+        circle,
+        rgba(255,140,60,.12),
+        transparent 70%
+    );
+    transform:translate(-50%,-50%);
+    z-index:-1;
+}
+
+button{
+    overflow:hidden;
+    position:relative;
+}
+
+.ripple{
+    position:absolute;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:rgba(255,255,255,.35);
+    transform:translate(-50%,-50%);
+    animation:ripple .6s linear;
+}
+
+@keyframes ripple{
+    from{
+        transform:
+        translate(-50%,-50%)
+        scale(1);
+        opacity:1;
+    }
+
+    to{
+        transform:
+        translate(-50%,-50%)
+        scale(15);
+        opacity:0;
+    }
 }
