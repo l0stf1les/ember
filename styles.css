@@ -1,1 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Inter,sans-serif;
+
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+
+    background:
+    linear-gradient(135deg,#ff7440,#4d1d12,#a72f1f);
+
+}
+
+.background{
+
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(circle at top left,#ff874d55,transparent 45%),
+    radial-gradient(circle at bottom right,#ff4c2b33,transparent 40%);
+
+    animation:bgMove 18s linear infinite alternate;
+}
 
